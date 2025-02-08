@@ -12,10 +12,17 @@
         object-fit: cover;
       }
 
-      h1,h2 {
+      h1 {
+        text-align: center;
+        margin-top: 64px;
+        margin-bottom: 32px
+        
+      }
+      
+      h2 {
         text-align: center;
         margin-top: 32px;
-        margin-bottom: 64px
+        margin-bottom: 32px
       }
 
       p {
@@ -23,12 +30,13 @@
       }
     </style>  
   </head>
-  
+    
     <body> 
-      <div class="container">
-      <h1>Apollo Careers</h1>
-      <img class="img-fluid" id="banner" src="static/do_something_great.jpg" width="300" height="200" alt="HTML Do smothing great">
-      <h2>About Apollo</h2>
+      {%include 'nav.html'%}
+      <div class="container mt-5">
+      <h1>Apollos Careers</h1>
+      <img class="img-fluid" id="banner" src="static/do_something_great.jpg" width="20" height="30" alt="HTML Do smothing great">
+      <h2>About Apollos Data Lab</h2>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et urna eu eros sollicitudin molestie et vitae felis. Nulla arcu turpis, tristique non velit at, vestibulum tempor mauris. Mauris porttitor diam et auctor eleifend. Curabitur porttitor elit neque, ac porttitor nunc sagittis sed. Pellentesque quis purus justo. In egestas libero.</p>
       <h2>Job Openings</h2>
       <div>
@@ -40,7 +48,7 @@
       <br>
         <div style="text-align:center;">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-          <p>Copyright 2025, Apollo</p>
+          <p>Copyright 2025, Apollos Data Lab</p>
         </div>
       </div>
     </body>
