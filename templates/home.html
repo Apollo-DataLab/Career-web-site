@@ -27,27 +27,34 @@
     
     <body> 
       {%include 'nav.html'%}
+      
       <img class="img-fluid" id="banner" src="static/do_something_great.jpg"  alt="HTML Do smothing great">
-      <div class="container">
-    
-      <h2>Apollos Careers</h2>
-        <div class="row" style="margin-bottom:16px">
-          <div class="container">
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et urna eu eros sollicitudin molestie et vitae felis. Nulla arcu turpis, tristique non velit at, vestibulum tempor mauris. Mauris porttitor diam et auctor eleifend. Curabitur porttitor elit neque, ac porttitor nunc sagittis sed. Pellentesque quis purus justo. In egestas libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et urna eu eros sollicitudin molestie et vitae felis. Nulla arcu turpis, tristique non velit at, vestibulum tempor mauris. Mauris porttitor diam et auctor eleifend. Curabitur porttitor elit neque, ac porttitor nunc sagittis sed. Pellentesque quis purus justo. In egestas libero.</p>
-          
-      <h2>Job Openings</h2>
+      
+<div class="container border" >
+    <h2>Working for us</h2>
+    <div class="row" style="margin-bottom:16px">
+        <div class="col-md-6">
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque et urna eu eros sollicitudin molestie et vitae felis. Nulla arcu turpis, tristique non velit at, vestibulum tempor mauris. Mauris porttitor diam et auctor eleifend. Curabitur porttitor elit neque, ac porttitor nunc sagittis sed. Pellentesque quis purus justo. In egestas libero.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="col-md-6">
+            <img class="img-fluid rounded" src="static/people.jpg"  alt="People working together">
+          </div>
+    </div>  
+  </div>
+    <div class="container">
+      <h2>Open Positions</h2>
       <div>
         {% for job in jobs %}
         {%include 'jobitem.html' %}
         {% endfor%}
-      
       </div>
+      
       <br>
         <div style="text-align:center;">
       <button class="btn btn-primary btn-lg">Contact Us</button>
-         
-        </div>
-      </div>
+        </div>   
+    </div>
+    
       {%include 'footer.html'%}
     </body>
   </html>
